@@ -5,7 +5,7 @@
 [![License: MIT (public assets)](https://img.shields.io/badge/license-MIT%20(public%20assets)-green)](https://github.com/GetVeripsa/veripsa-changelog/blob/main/LICENSE)
 [![Status](https://img.shields.io/badge/status-veripsa.com%2Fstatus-lightgrey)](https://veripsa.com/status)
 
-**Pre-merge cross-PR collision control.** When several pull requests are open at once — especially with AI coding agents and people working the same repository in parallel — changes that look independent can collide on `main`. Git surfaces only *textual* conflicts, and only at merge time. Veripsa compares the open PRs against each other and against `main` **before anyone merges**, using the repository's import / call / schema graph — not just filenames.
+**Pre-merge cross-PR collision control.** When several pull requests are open at once — especially with AI coding agents and people working the same repository in parallel — changes that look independent can collide on `main`. Git surfaces only *textual* conflicts, and only at merge time. Veripsa compares the open PRs against each other and against `main` **before anyone merges**, looking past filenames at how the pieces of the repository actually relate.
 
 Veripsa is **one GitHub App**. Install it on a repository and it posts a check run and a single PR comment on every PR push. There is no per-agent setup; the same install covers humans and AI coding agents alike. **Advisory by default** — your branch-protection policy decides what's required to merge.
 
@@ -18,7 +18,7 @@ Veripsa is **one GitHub App**. Install it on a repository and it posts a check r
 - **Advisory by default.** Veripsa posts a check and a comment; your branch-protection policy decides what's required.
 - **Acknowledging is not an approval.** When a material coupling is flagged, the `veripsa-ack` label records that someone *saw* the specific coupling and chose to proceed deliberately. Veripsa does not assert your change is correct. Reviewers and CI still decide what merges.
 - **Pre-merge, cross-PR.** Looks at the set of open PRs together, not just the current one.
-- **Structural, not filename.** Reads the repository's import / call / schema graph — so it can surface coupling a folder heuristic and Git both miss.
+- **Structural, not filename.** Reasons about the repository as a whole — so it can surface coupling a folder heuristic and Git both miss.
 - **Content-free.** Only paths, symbol names, line ranges, edges, and counts cross the wire. Source files do not.
 
 ## What it is not
