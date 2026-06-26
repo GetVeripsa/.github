@@ -7,7 +7,7 @@
 
 **Pre-merge cross-PR collision control.** When several pull requests are open at once — especially with AI coding agents and people working the same repository in parallel — changes that look independent can collide on `main`. Git surfaces only *textual* conflicts, and only at merge time. Veripsa compares the open PRs against each other and against `main` **before anyone merges**, looking past filenames at how the pieces of the repository actually relate.
 
-Veripsa is **one GitHub App**. Install it on a repository and it posts a check run and a single PR comment on every PR push. There is no per-agent setup; the same install covers humans and AI coding agents alike. **Advisory by default** — your branch-protection policy decides what's required to merge.
+Veripsa is **one GitHub App**. Install it on a repository and it posts a check run and a single PR comment per analyzed PR head. There is no per-agent setup; the same install covers humans and AI coding agents alike. **Advisory by default** — your branch-protection policy decides what's required to merge.
 
 ## Try Veripsa Core in 10 minutes
 
@@ -29,7 +29,7 @@ Veripsa is **one GitHub App**. Install it on a repository and it posts a check r
 
 ## Honest scope today
 
-- **Within-repo, same-branch coordination only.** Cross-repo / within-org coordination is on the roadmap and not a shipped claim.
+- **Within-repo, same-branch coordination only.** Other scopes are not shipped today.
 - **Same-owner only.** All coordinated PRs must be on a repository owned by the installing GitHub account.
 - **Branch-protection gating requires a paid GitHub plan** on private repositories. On free private repos, Veripsa stays advisory.
 - **Language coverage varies.** The percentage of PR file paths the extractor recognizes is reported per installation.
