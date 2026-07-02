@@ -16,10 +16,10 @@ Veripsa is **one GitHub App**. Install it on a repository and it posts a check r
 ## What it is, honestly
 
 - **Advisory by default.** Veripsa posts a check and a comment; your branch-protection policy decides what's required.
-- **Acknowledging is not an approval.** When a material coupling is flagged, the `veripsa-ack` label records that someone *saw* the specific coupling and chose to proceed deliberately. Veripsa does not assert your change is correct. Reviewers and CI still decide what merges.
+- **Acknowledging is not an approval.** When a material overlap is flagged, the `veripsa-ack` label records that someone *saw* the specific overlap and chose to proceed deliberately. Veripsa does not assert your change is correct. Reviewers and CI still decide what merges.
 - **Pre-merge, cross-PR.** Looks at the set of open PRs together, not just the current one.
-- **Structural, not filename.** Reasons about the repository as a whole — so it can surface coupling a folder heuristic and Git both miss.
-- **Content-free.** Only paths, symbol names, line ranges, edges, and counts cross the wire. Source files do not.
+- **More than filename matching.** Two PRs can collide without touching the same file — Veripsa can flag overlap that a folder heuristic and Git both miss.
+- **Content-free.** Repository files are read transiently to produce the minimal operational metadata needed for the advisory, then discarded. Source file bodies are not stored, displayed, or used for code review.
 
 ## What it is not
 
