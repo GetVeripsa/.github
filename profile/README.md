@@ -32,7 +32,7 @@ Veripsa is **one GitHub App**. Install it on a repository and it posts a check r
 - **Within-repo, same-branch coordination only.** Other scopes are not shipped today.
 - **Same-owner only.** All coordinated PRs must be on a repository owned by the installing GitHub account.
 - **Branch-protection gating requires a paid GitHub plan** on private repositories. On free private repos, Veripsa stays advisory.
-- **Language coverage varies.** The percentage of PR file paths the extractor recognizes is reported per installation.
+- **Language coverage varies.** Coverage depends on repository shape; some files are understood in more depth than others. Files outside that envelope are still tracked so direct same-file collisions are caught.
 - **No customer case studies yet.** Effect claims (rework hours saved, cycle-time impact) require a deployed A/B over real PRs over time; that evidence does not exist yet.
 
 ## Featured projects
