@@ -21,6 +21,7 @@ Veripsa Core is a GitHub App. Install it on a repository and it posts a check ru
 | 日本語の共有キット | <https://veripsa.com/ja/share> |
 | Status | <https://veripsa.com/status> |
 | Trust Center | <https://veripsa.com/trust> |
+| GitHub discovery index | [`DISCOVERY.md`](https://github.com/GetVeripsa/.github/blob/main/DISCOVERY.md) |
 
 ## What it is, honestly
 
@@ -52,6 +53,7 @@ The Veripsa product code lives in private repositories. The public repos here ar
 
 ## Feeds and discovery
 
+- GitHub discovery index: [`DISCOVERY.md`](https://github.com/GetVeripsa/.github/blob/main/DISCOVERY.md)
 - Blog RSS: <https://veripsa.com/blog/feed.xml>
 - Blog JSON Feed: <https://veripsa.com/blog/feed.json>
 - LLM discovery file: <https://veripsa.com/llms.txt>
