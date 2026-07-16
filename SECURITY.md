@@ -1,6 +1,8 @@
 # Security Policy
 
-Thanks for helping keep Veripsa users safe. This is the **org-default** policy for every public and private repository in the [GetVeripsa](https://github.com/GetVeripsa) organization. Individual repositories may publish a more specific policy that supersedes this one.
+Thanks for helping keep Veripsa users safe. This is the **org-default** policy
+for GetVeripsa repositories that inherit it. An individual repository may
+publish a more specific policy that supersedes this one.
 
 The full, canonical disclosure process is at **<https://veripsa.com/security/disclosure>**. The short version follows.
 
@@ -13,17 +15,18 @@ Email **support@veripsa.com** with the subject line starting `[SECURITY]`, inclu
 - Steps to reproduce, a proof of concept, or an exploit chain if you have one.
 - Your name or handle so we can credit you, if you'd like to be credited.
 
-> Veripsa is a small team. Security reports are routed off the same `support@veripsa.com` inbox using the `[SECURITY]` subject prefix — please use it so the report is triaged ahead of general support. We will split into a dedicated `security@` address once volume warrants it.
+> Security reports are routed from `support@veripsa.com` using the `[SECURITY]`
+> subject prefix. Please use it so the report is triaged ahead of general support.
 
 Please **do not** open a public GitHub issue, public discussion, or public PR for a suspected security issue.
 
 ## What to expect
 
-- **Acknowledgement:** within **2 business days** of receipt.
-- **Initial triage:** within **5 business days** — we will tell you whether the report appears valid, what we believe the severity is, and what the next step is.
-- **Status updates:** at least every **7 days** while a report is open.
-- **Coordinated disclosure:** we work with reporters on a public disclosure timeline once a fix is shipped. Default target is **90 days** from report to public disclosure; we negotiate shorter or longer based on severity and complexity.
-- **Credit:** with your permission, we credit reporters in the public disclosure note.
+Response targets, scope, safe-harbor terms, and coordinated-disclosure details
+live on the [canonical disclosure page](https://veripsa.com/security/disclosure).
+They are maintained there so this org default cannot drift into a conflicting
+promise. Veripsa handles reports on a best-effort basis and credits reporters
+with their permission.
 
 ## Scope
 
