@@ -38,7 +38,7 @@ In scope:
 
 Out of scope:
 
-- **Third-party services** that Veripsa uses as subprocessors (e.g. the hosting provider, the email provider). These have their own coordinated disclosure programs. Please report directly to them. If you believe a Veripsa configuration of a third-party service is at fault, that **is** in scope — please tell us.
+- **Third-party services** that Veripsa uses as subprocessors (e.g. the hosting provider). These have their own coordinated disclosure programs. Please report directly to them. If you believe a Veripsa configuration of a third-party service is at fault, that **is** in scope — please tell us.
 - **Social engineering** of Veripsa staff, physical attacks, and denial-of-service tests against production.
 - **GitHub itself** — please use <https://bounty.github.com/>.
 - Findings that require a **pre-compromised** developer machine or a **pre-compromised GitHub account** of a Veripsa user.
