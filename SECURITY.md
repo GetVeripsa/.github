@@ -33,12 +33,12 @@ with their permission.
 In scope:
 
 - The **Veripsa Core GitHub App** (the App installed on customer repositories from the GetVeripsa org).
-- **veripsa.com** — the marketing, account, and billing surfaces operated by Veripsa.
+- **veripsa.com** — the marketing and account surfaces operated by Veripsa.
 - Repositories inside the [GetVeripsa](https://github.com/GetVeripsa) organization that this default policy covers.
 
 Out of scope:
 
-- **Third-party services** that Veripsa uses as subprocessors (e.g. the hosting provider, the payment processor, the email provider). These have their own coordinated disclosure programs. Please report directly to them. If you believe a Veripsa configuration of a third-party service is at fault, that **is** in scope — please tell us.
+- **Third-party services** that Veripsa uses as subprocessors (e.g. the hosting provider, the email provider). These have their own coordinated disclosure programs. Please report directly to them. If you believe a Veripsa configuration of a third-party service is at fault, that **is** in scope — please tell us.
 - **Social engineering** of Veripsa staff, physical attacks, and denial-of-service tests against production.
 - **GitHub itself** — please use <https://bounty.github.com/>.
 - Findings that require a **pre-compromised** developer machine or a **pre-compromised GitHub account** of a Veripsa user.
