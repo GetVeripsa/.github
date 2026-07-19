@@ -38,7 +38,7 @@ The Core engine and hosted platform remain private. The public surfaces explain
 what data crosses the boundary and what users can observe, not how Veripsa
 decides internally.
 
-## Honest scope
+## Product boundaries
 
 - Veripsa is not a merge queue or an AI code reviewer.
 - It does not replace tests, CI, branch protection, or human review.
